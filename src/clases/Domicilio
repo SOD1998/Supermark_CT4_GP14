@@ -1,0 +1,45 @@
+package clases;
+public class Domicilio {
+	private String calle;
+	private Integer NumCasa;
+	private Integer NumPiso;
+	private Integer NumDpto;
+	
+	public Domicilio( String calle,Integer NumCasa) {
+	super();
+	this.calle = calle;
+	this.NumCasa= NumCasa;
+	}
+	
+	public Domicilio(Integer NumPiso,Integer NumDpto) {
+		super();
+		this.NumPiso = NumPiso;
+		this.NumDpto= NumDpto;
+		}
+	
+	public String getCalle() {
+		return calle;
+	}
+	public void setCalle(String calle) {
+		this.calle = calle;
+	}
+	public Integer getNumCasa() {
+		return NumCasa;
+	}
+	public void setNumCasa(Integer numCasa) {
+		NumCasa = numCasa;
+	}
+	public Integer getNumPiso() {
+		return NumPiso;
+	}
+	public void setNumPiso(Integer numPiso) {
+		NumPiso = numPiso;
+	}
+	public Integer getNumDpto() {
+		return NumDpto;
+	}
+	public void setNumDpto(Integer numDpto) {
+		NumDpto = numDpto;
+	}
+
+}
