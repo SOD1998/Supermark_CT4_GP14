@@ -1,23 +1,29 @@
 package clases;
 
 public class Producto {
+	private int Id_Producto;
 	private String Nombre;
-	private float Precio_unitario;
+	private double Precio_unitario;
 	private int Stock;
 	private String Detalle;
 	
-	public Producto (String Nombre, float Precio_unitario, int Stock, String Detalle) {
+	public Producto (int Id_Producto, String Nombre, double Precio_unitario, int Stock, String Detalle) {
+		this.Id_Producto = Id_Producto;
 		this.Nombre = Nombre;
 		this.Precio_unitario = Precio_unitario;
 		this.Stock = Stock;
 		this.Detalle = Detalle;
 	}
 	
+	public int getId_Producto() {
+		return Id_Producto;
+	}
+
 	public String getNombre() {
 		return this.Nombre;
 	}
 	
-	public float getPrecio_unitario() {
+	public double getPrecio_unitario() {
 		return this.Precio_unitario;
 	}
 	
@@ -28,12 +34,16 @@ public class Producto {
 	public String getDetalle() {
 		return this.Detalle;
 	}
+	
+	public void setId_Producto(int id_Producto) {
+		Id_Producto = id_Producto;
+	}
 		
 	public void setNombre(String Nombre) {
 		this.Nombre = Nombre;
 	}
 	
-	public void setPrecio_unitario(float Precio_unitario) {
+	public void setPrecio_unitario(double Precio_unitario) {
 		this.Precio_unitario = Precio_unitario;
 	}
 	

@@ -7,7 +7,7 @@ public class Carrito {
 	private String Medio_pago;
 	private String Envio;
 	
-	public Carrito (Producto Producto,int Cantidad_de_producto, String Codigo_descuento, String Medio_pago, String Envio) {
+	public Carrito (Producto Producto, int Cantidad_de_producto, String Codigo_descuento, String Medio_pago, String Envio) {
 		this.Producto = Producto;
 		this.Cantidad_de_producto = Cantidad_de_producto;
 		this.Codigo_descuento = Codigo_descuento;
@@ -47,8 +47,8 @@ public class Carrito {
 		}
 	}
 	
-	public float Costo_acumulado() {
-		float Precio_compra = 0;
+	public double Costo_acumulado() {
+		double Precio_compra = 0;
 		if (this.Cantidad_de_producto == 0) {
 			System.out.println("Total a pagar: $" + Precio_compra);
 			return Precio_compra;
