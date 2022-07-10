@@ -7,7 +7,7 @@ public class Conector {
 	static String DB_URL = "jdbc:mysql://localhost:3306/supermark"; //VERIFICAR NOMBRE DE LA BASE DE DATOS
 	//Credenciales de la BDD
 	static final String USER = "root"; //CAMBIAR
-	static final String PASS = "MiliTeAmo1912"; //CAMBIAR
+	static final String PASS = "Password"; //CAMBIAR
 
 	Connection conn = null;
 	Statement stmt = null;//Objeto para realizar las declaraciones SQL que requiramos
